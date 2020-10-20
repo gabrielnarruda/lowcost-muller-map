@@ -10,7 +10,7 @@ import plotly.express as px
 fig = px.scatter_mapbox(df, lat="lat", lon="lon",
                        color="Indice Radiação (mR/h)",
                        size="Indice Radiação (mR/h)",
-                       color_continuous_scale='bluered',
+                       color_continuous_scale=["blue", "yellow", "red"],
                        size_max=15,
                        zoom=10,
                        hover_name='Local'
