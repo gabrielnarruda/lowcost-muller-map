@@ -1,5 +1,5 @@
 
 colors = {
-    'background': '#111111',
-    'text': '#7FDBFF'
+    'background': '#01303f',
+    'text': '#000000'
 }
