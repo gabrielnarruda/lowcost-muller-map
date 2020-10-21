@@ -1,5 +1,6 @@
 import dash
 
+from environment_variables import HOST, PORT
 from html_structures.global_map_html import global_map_layout
 
 if __name__ == '__main__':
@@ -9,4 +10,4 @@ if __name__ == '__main__':
 
     app.layout = global_map_layout
 
-    app.run_server(debug=True)
+    app.run_server(host=HOST, port=PORT, debug=False)

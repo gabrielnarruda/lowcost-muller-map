@@ -11,4 +11,6 @@ COPY . /usr/src/app
 
 EXPOSE 8050
 
-CMD ["python", "app/app.py"]
+ENTRYPOINT [ "python3" ]
+
+CMD ["app.py"]
