@@ -1,15 +1,12 @@
 import plotly.express as px
-import pandas as pd
-import plotly.graph_objects as go
 
-from data.global_map_data import df
-from globals.styles import colors
+from data.global_map_data import get_chart_data
 
-import plotly.express as px
+df=get_chart_data()
 
 fig = px.scatter_mapbox(df, lat="lat", lon="lon",
-                       color="Indice Radiação (mR/h)",
-                       size="Indice Radiação (mR/h)",
+                       color="Radiation Level (mR/h)",
+                       size="Radiation Level (mR/h)",
                        color_continuous_scale=["blue", "yellow", "red"],
                        size_max=15,
                        zoom=10,

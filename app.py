@@ -1,5 +1,6 @@
 import dash
 
+from data.global_map_data import get_data_from_backend
 from environment_variables import HOST, PORT
 from html_structures.global_map_html import global_map_layout
 
