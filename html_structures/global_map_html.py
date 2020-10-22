@@ -30,7 +30,7 @@ global_map_layout = html.Div(children=[
             'color': colors['text']}
                     ),
     html.Footer(children='''
-         Contact us thought: xpto@email.com
+         Contact us thought: vision.ontarget@gmail.com
     ''', style={
         'textAlign': 'center',
         'color': colors['text']}
