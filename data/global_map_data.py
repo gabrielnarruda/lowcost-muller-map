@@ -11,6 +11,8 @@ def get_chart_data():
         df_exists, df = get_data_from_backend()
         if not df_exists:
             df = get_data_from_last_backup()
+        df.rename(columns={'Radiation Level (mR/h)':'Radiation Level (mGy/h)'},inplace=True)
+        df['Radiation Level (mGy/h)']=round(df['Radiation Level (mGy/h)'], 2)
         return df
     except:
         raise

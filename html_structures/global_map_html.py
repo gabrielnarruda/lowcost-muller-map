@@ -1,7 +1,7 @@
 import dash_html_components as html
 import dash_core_components as dcc
 
-from chart.global_map_chart import fig
+from chart.global_map_chart import map_plot
 from globals.styles import colors
 
 global_map_layout = html.Div(children=[
@@ -9,7 +9,7 @@ global_map_layout = html.Div(children=[
         'textAlign': 'center',
         'color': colors['text'],
     }),
-    html.H2(children='Standard Gieger-Muller Detection', style={
+    html.H2(children='Standard Geiger-Muller Detection', style={
         'textAlign': 'center',
         'color': colors['text']
     }),
@@ -20,7 +20,7 @@ global_map_layout = html.Div(children=[
 
     dcc.Graph(
         id='example-graph',
-        figure=fig
+        figure=map_plot()
     ),
 
     html.Div(children='''
